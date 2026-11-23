@@ -6,7 +6,115 @@
   <meta name="description" content="七个 Cocos Creator 游戏项目，打开浏览器即可试玩。">
   <meta name="theme-color" content="#15161a">
   <title>游戏作品集</title>
-  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #15161a;
+      --paper: #202127;
+      --text: #f5f4f7;
+      --muted: #bdbdc9;
+      --accent: #e3f883;
+      font-family: "Microsoft YaHei UI", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif;
+      line-height: 1.55;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    a { color: inherit; }
+    h1, h2, p { margin: 0; }
+    button { font: inherit; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+
+    .shell { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+    .intro { padding-block: clamp(48px, 9vw, 108px) clamp(32px, 5vw, 64px); }
+    .intro h1 { font-size: clamp(2.9rem, 7vw, 6.1rem); line-height: 1.12; letter-spacing: -.045em; }
+    .intro h1 span { margin-inline-start: .12em; color: var(--accent); }
+    .intro p { margin-top: 18px; color: var(--muted); font-size: clamp(1rem, 1.7vw, 1.18rem); }
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      padding-bottom: 56px;
+    }
+
+    .card {
+      --card-cover: #33313d;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #363740;
+      border-radius: 18px;
+      background: var(--paper);
+      text-decoration: none;
+      overflow: hidden;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .card-jambus { --card-cover: #ae754e; }
+    .card-jlyj { --card-cover: #4b68ae; }
+    .card-unique-fusion { --card-cover: #826aaf; }
+    .card-xrq { --card-cover: #425ec0; }
+    .card-zdhjy-gitee { --card-cover: #668e79; }
+    .card-piano-wave { --card-cover: #8b43a7; }
+    .card-perfect-rhythm { --card-cover: #67405f; }
+    .cover {
+      display: grid;
+      place-items: center;
+      position: relative;
+      aspect-ratio: 1.6;
+      overflow: hidden;
+      isolation: isolate;
+      background: var(--card-cover);
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 65%, #ffffff3d 4%, #00000040 100%);
+    }
+    .cover img {
+      width: min(57%, 220px);
+      height: auto;
+      display: block;
+      align-self: start;
+      margin-top: 18px;
+      border: 1px solid #ffffff66;
+      border-radius: 13px;
+      box-shadow: 0 14px 32px #15131b80;
+    }
+    .card-unique-fusion .cover img { margin-top: -40px; }
+    .details { display: flex; flex: 1; flex-direction: column; align-items: start; padding: 22px; }
+    .category { color: var(--muted); font-size: .875rem; }
+    .details h2 { font-size: clamp(1.35rem, 2.4vw, 1.8rem); line-height: 1.25; margin-top: 6px; }
+    .description { color: var(--muted); margin-top: 9px; margin-bottom: 22px; }
+    .try {
+      display: inline-flex;
+      margin-top: auto;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #202511;
+      font-weight: 700;
+      font-size: .95rem;
+    }
+    @media (hover: hover) {
+      .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+    }
+
+    @media (max-width: 880px) {
+      .works { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 540px) {
+      .shell { width: calc(100% - 32px); }
+      .works { grid-template-columns: 1fr; gap: 16px; }
+      .intro { padding-top: 44px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card { transition: none; }
+    }
+  </style>
 </head>
 <body>
   <main class="shell">
@@ -14,9 +122,106 @@
       <h1>游戏作品集<span aria-hidden="true">.</span></h1>
       <p>选择一款游戏，直接在浏览器中试玩。</p>
     </header>
-    <section class="works" aria-label="可试玩的游戏" id="games"></section>
-    <noscript>请启用 JavaScript 后查看并试玩游戏。</noscript>
+    <section class="works" aria-label="可试玩的游戏" id="games">
+      <a class="card card-jambus" href="games/jam-bus-player/" aria-labelledby="title-jambus">
+        <div class="cover">
+          <img src="covers/jambus-220.webp"
+               srcset="covers/jambus-220.webp 220w, covers/jambus.webp 420w"
+               sizes="(max-width: 540px) min(220px, calc(57vw - 19px)), (max-width: 880px) min(220px, calc(28.5vw - 25px)), min(213px, calc(19vw - 20px))"
+               width="420" height="790" alt="" decoding="async" fetchpriority="high">
+        </div>
+        <div class="details">
+          <p class="category">车辆调度 · 玩法复现</p>
+          <h2 id="title-jambus">挪车倒沙</h2>
+          <p class="description">安排巴士出场的顺序，让不同颜色的车辆收走对应的沙粒。</p>
+          <span class="try" aria-hidden="true">开始试玩</span>
+        </div>
+      </a>
+      <a class="card card-jlyj" href="play.html?game=jlyj" aria-labelledby="title-jlyj">
+        <div class="cover">
+          <img src="covers/jlyj-220.webp"
+               srcset="covers/jlyj-220.webp 220w, covers/jlyj.webp 420w"
+               sizes="(max-width: 540px) min(220px, calc(57vw - 19px)), (max-width: 880px) min(220px, calc(28.5vw - 25px)), min(213px, calc(19vw - 20px))"
+               width="420" height="790" alt="" decoding="async" loading="lazy">
+        </div>
+        <div class="details">
+          <p class="category">解谜 · 玩法原型</p>
+          <h2 id="title-jlyj">超不过我吧</h2>
+          <p class="description">观察箭头的朝向和阻挡关系，找到顺序，清空整张棋盘。</p>
+          <span class="try" aria-hidden="true">开始试玩</span>
+        </div>
+      </a>
+      <a class="card card-unique-fusion" href="play.html?game=unique-fusion" aria-labelledby="title-unique-fusion">
+        <div class="cover">
+          <img src="covers/unique-fusion-220.webp"
+               srcset="covers/unique-fusion-220.webp 220w, covers/unique-fusion.webp 420w"
+               sizes="(max-width: 540px) min(220px, calc(57vw - 19px)), (max-width: 880px) min(220px, calc(28.5vw - 25px)), min(213px, calc(19vw - 20px))"
+               width="420" height="790" alt="" decoding="async" loading="lazy">
+        </div>
+        <div class="details">
+          <p class="category">圆环解谜 · 玩法重制</p>
+          <h2 id="title-unique-fusion">一环又一环</h2>
+          <p class="description">观察圆环之间的卡位关系，逐步解开相互牵制的圆环。</p>
+          <span class="try" aria-hidden="true">开始试玩</span>
+        </div>
+      </a>
+      <a class="card card-xrq" href="play.html?game=xrq" aria-labelledby="title-xrq">
+        <div class="cover">
+          <img src="covers/xrq-220.webp"
+               srcset="covers/xrq-220.webp 220w, covers/xrq.webp 420w"
+               sizes="(max-width: 540px) min(220px, calc(57vw - 19px)), (max-width: 880px) min(220px, calc(28.5vw - 25px)), min(213px, calc(19vw - 20px))"
+               width="420" height="790" alt="" decoding="async" loading="lazy">
+        </div>
+        <div class="details">
+          <p class="category">颜色匹配 · 工程复现</p>
+          <h2 id="title-xrq">沙化消除</h2>
+          <p class="description">按颜色派出沙桶，收集对应的沙粒，逐步清空沙画。</p>
+          <span class="try" aria-hidden="true">开始试玩</span>
+        </div>
+      </a>
+      <a class="card card-zdhjy-gitee" href="play.html?game=zdhjy-gitee" aria-labelledby="title-zdhjy-gitee">
+        <div class="cover">
+          <img src="covers/zdhjy-gitee-220.webp"
+               srcset="covers/zdhjy-gitee-220.webp 220w, covers/zdhjy-gitee.webp 420w"
+               sizes="(max-width: 540px) min(220px, calc(57vw - 19px)), (max-width: 880px) min(220px, calc(28.5vw - 25px)), min(213px, calc(19vw - 20px))"
+               width="420" height="790" alt="" decoding="async" loading="lazy">
+        </div>
+        <div class="details">
+          <p class="category">花束整理 · 玩法重制</p>
+          <h2 id="title-zdhjy-gitee">解压插花</h2>
+          <p class="description">从花池挑选花材，将同类花朵凑成花束，完成订单。</p>
+          <span class="try" aria-hidden="true">开始试玩</span>
+        </div>
+      </a>
+      <a class="card card-piano-wave" href="games/piano-wave-player/" aria-labelledby="title-piano-wave">
+        <div class="cover">
+          <img src="covers/piano-wave-220.webp"
+               srcset="covers/piano-wave-220.webp 220w, covers/piano-wave.webp 420w"
+               sizes="(max-width: 540px) min(220px, calc(57vw - 19px)), (max-width: 880px) min(220px, calc(28.5vw - 25px)), min(213px, calc(19vw - 20px))"
+               width="420" height="790" alt="" decoding="async" loading="lazy">
+        </div>
+        <div class="details">
+          <p class="category">音乐节奏 · 钢琴键</p>
+          <h2 id="title-piano-wave">钢琴音浪</h2>
+          <p class="description">选一首曲目，跟着旋律点击落下的琴键，挑战更高分数。</p>
+          <span class="try" aria-hidden="true">开始试玩</span>
+        </div>
+      </a>
+      <a class="card card-perfect-rhythm" href="games/perfect-rhythm-player/" aria-labelledby="title-perfect-rhythm">
+        <div class="cover">
+          <img src="covers/perfect-rhythm-220.webp"
+               srcset="covers/perfect-rhythm-220.webp 220w, covers/perfect-rhythm.webp 420w"
+               sizes="(max-width: 540px) min(220px, calc(57vw - 19px)), (max-width: 880px) min(220px, calc(28.5vw - 25px)), min(213px, calc(19vw - 20px))"
+               width="420" height="790" alt="" decoding="async" loading="lazy">
+        </div>
+        <div class="details">
+          <p class="category">音乐节奏 · 判定线</p>
+          <h2 id="title-perfect-rhythm">完美节奏</h2>
+          <p class="description">跟上节拍，点击、长按或滑动音符，完成整首曲目。</p>
+          <span class="try" aria-hidden="true">开始试玩</span>
+        </div>
+      </a>
+    </section>
   </main>
-  <script type="module" src="catalog.js"></script>
 </body>
 </html>
