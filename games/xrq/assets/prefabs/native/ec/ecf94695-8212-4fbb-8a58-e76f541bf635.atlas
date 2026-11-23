@@ -1,0 +1,69 @@
+
+9c38f379-b6ea-435c-ace5-141ae1857fe7.png
+size: 1236,1684
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: false
+  xy: 2, 2
+  size: 750, 1680
+  orig: 750, 1680
+  offset: 0, 0
+  index: -1
+diw
+  rotate: true
+  xy: 754, 608
+  size: 523, 323
+  orig: 523, 323
+  offset: 0, 0
+  index: -1
+shan
+  rotate: false
+  xy: 1079, 817
+  size: 107, 113
+  orig: 110, 120
+  offset: 1, 5
+  index: -1
+shenti
+  rotate: false
+  xy: 754, 1133
+  size: 480, 549
+  orig: 482, 559
+  offset: 0, 7
+  index: -1
+youj
+  rotate: false
+  xy: 1020, 384
+  size: 185, 222
+  orig: 194, 226
+  offset: 4, 4
+  index: -1
+yous
+  rotate: false
+  xy: 754, 316
+  size: 264, 290
+  orig: 267, 292
+  offset: 3, 0
+  index: -1
+zuiba
+  rotate: true
+  xy: 1079, 932
+  size: 199, 122
+  orig: 199, 122
+  offset: 0, 0
+  index: -1
+zuoj
+  rotate: true
+  xy: 948, 88
+  size: 226, 169
+  orig: 230, 175
+  offset: 0, 3
+  index: -1
+zuos
+  rotate: false
+  xy: 754, 23
+  size: 192, 291
+  orig: 195, 294
+  offset: 0, 0
+  index: -1

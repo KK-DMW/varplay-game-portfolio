@@ -1,0 +1,41 @@
+
+youxijieshu.png
+size: 893,297
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b
+  rotate: false
+  xy: 762, 15
+  size: 126, 138
+  orig: 126, 138
+  offset: 0, 0
+  index: -1
+dt
+  rotate: false
+  xy: 2, 2
+  size: 631, 293
+  orig: 631, 293
+  offset: 0, 0
+  index: -1
+s
+  rotate: false
+  xy: 765, 156
+  size: 126, 139
+  orig: 127, 139
+  offset: 0, 0
+  index: -1
+x
+  rotate: false
+  xy: 635, 155
+  size: 128, 140
+  orig: 128, 140
+  offset: 0, 0
+  index: -1
+y
+  rotate: false
+  xy: 635, 12
+  size: 125, 141
+  orig: 125, 141
+  offset: 0, 0
+  index: -1

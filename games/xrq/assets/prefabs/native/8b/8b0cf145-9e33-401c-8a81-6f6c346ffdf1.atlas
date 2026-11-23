@@ -1,0 +1,27 @@
+
+1569e834-b616-4c45-a37c-138a775d2f0f.png
+size: 890,202
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ann
+  rotate: false
+  xy: 392, 10
+  size: 380, 190
+  orig: 382, 192
+  offset: 1, 1
+  index: -1
+ann2
+  rotate: false
+  xy: 2, 2
+  size: 388, 198
+  orig: 390, 200
+  offset: 1, 1
+  index: -1
+guanx
+  rotate: false
+  xy: 774, 16
+  size: 114, 184
+  orig: 117, 186
+  offset: 2, 1
+  index: -1

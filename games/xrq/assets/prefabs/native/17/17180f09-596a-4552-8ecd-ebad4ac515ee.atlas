@@ -1,0 +1,62 @@
+
+150cbf51-f223-4c92-b171-33c318109d58.png
+size: 328,557
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bd
+  rotate: true
+  xy: 173, 246
+  size: 161, 149
+  orig: 167, 152
+  offset: 4, 2
+  index: -1
+citie
+  rotate: true
+  xy: 2, 79
+  size: 161, 164
+  orig: 161, 164
+  offset: 0, 0
+  index: -1
+dl
+  rotate: false
+  xy: 173, 409
+  size: 153, 146
+  orig: 153, 146
+  offset: 0, 0
+  index: -1
+dou
+  rotate: false
+  xy: 2, 242
+  size: 166, 144
+  orig: 182, 149
+  offset: 9, 1
+  index: -1
+sg
+  rotate: false
+  xy: 2, 4
+  size: 69, 73
+  orig: 83, 83
+  offset: 7, 5
+  index: -1
+xin
+  rotate: false
+  xy: 170, 124
+  size: 144, 120
+  orig: 148, 138
+  offset: 2, 9
+  index: -1
+xin_2
+  rotate: false
+  xy: 168, 2
+  size: 144, 120
+  orig: 148, 138
+  offset: 2, 9
+  index: -1
+zd
+  rotate: false
+  xy: 2, 388
+  size: 169, 167
+  orig: 178, 178
+  offset: 5, 6
+  index: -1

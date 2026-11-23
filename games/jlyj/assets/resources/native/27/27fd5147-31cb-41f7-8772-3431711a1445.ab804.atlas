@@ -1,0 +1,160 @@
+
+skeleton.png
+size: 927,392
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0
+  rotate: false
+  xy: 2, 134
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+1
+  rotate: false
+  xy: 68, 134
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 134, 134
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 200, 134
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 2, 68
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 266, 134
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 2, 2
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 332, 134
+  size: 64, 256
+  orig: 64, 256
+  offset: 0, 0
+  index: -1
+dh_in/0
+  rotate: false
+  xy: 260, 4
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/1
+  rotate: false
+  xy: 398, 262
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/10
+  rotate: false
+  xy: 520, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/11
+  rotate: false
+  xy: 650, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/12
+  rotate: false
+  xy: 780, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/2
+  rotate: false
+  xy: 528, 262
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/3
+  rotate: false
+  xy: 658, 262
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/4
+  rotate: false
+  xy: 788, 262
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/5
+  rotate: false
+  xy: 398, 132
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/6
+  rotate: false
+  xy: 528, 132
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/7
+  rotate: false
+  xy: 658, 132
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/8
+  rotate: false
+  xy: 788, 132
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dh_in/9
+  rotate: false
+  xy: 390, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+quan
+  rotate: true
+  xy: 910, 85
+  size: 45, 15
+  orig: 45, 15
+  offset: 0, 0
+  index: -1

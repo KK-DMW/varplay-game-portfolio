@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#15161a">
+  <title>完美节奏 · 游戏作品集</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="play-page">
+  <header class="play-bar">
+    <a class="back" href="../../">返回合集</a>
+    <h1>完美节奏</h1>
+    <button type="button" class="fullscreen" hidden>全屏</button>
+  </header>
+  <main class="player">
+    <iframe class="game-frame" src="game/index.html" title="完美节奏试玩" allow="autoplay; fullscreen"></iframe>
+  </main>
+  <script>
+    const player = document.querySelector('.player');
+    const fullscreen = document.querySelector('.fullscreen');
+    if (document.fullscreenEnabled && player.requestFullscreen) {
+      fullscreen.hidden = false;
+      fullscreen.addEventListener('click', () => {
+        player.requestFullscreen().catch(() => { fullscreen.hidden = true; });
+      });
+    }
+  </script>
+</body>
+</html>

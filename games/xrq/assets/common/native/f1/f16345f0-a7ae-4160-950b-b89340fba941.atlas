@@ -1,0 +1,20 @@
+
+shouz.png
+size: 264,122
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+g
+  rotate: false
+  xy: 147, 4
+  size: 115, 116
+  orig: 133, 126
+  offset: 5, 5
+  index: -1
+shouz
+  rotate: false
+  xy: 2, 2
+  size: 143, 118
+  orig: 143, 118
+  offset: 0, 0
+  index: -1

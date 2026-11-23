@@ -1,0 +1,27 @@
+
+ydaot.png
+size: 347,282
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shenti
+  rotate: false
+  xy: 2, 11
+  size: 213, 269
+  orig: 215, 271
+  offset: 1, 1
+  index: -1
+zui
+  rotate: false
+  xy: 217, 2
+  size: 79, 45
+  orig: 81, 47
+  offset: 1, 1
+  index: -1
+zuos
+  rotate: false
+  xy: 217, 49
+  size: 128, 231
+  orig: 130, 233
+  offset: 1, 1
+  index: -1

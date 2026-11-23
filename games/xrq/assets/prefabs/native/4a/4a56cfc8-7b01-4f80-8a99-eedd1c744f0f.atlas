@@ -1,0 +1,76 @@
+
+gongxitongguan.png
+size: 1060,506
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dt
+  rotate: false
+  xy: 2, 141
+  size: 600, 363
+  orig: 600, 384
+  offset: 0, 0
+  index: -1
+gon
+  rotate: false
+  xy: 129, 4
+  size: 125, 135
+  orig: 125, 136
+  offset: 0, 1
+  index: -1
+gon_2
+  rotate: false
+  xy: 833, 266
+  size: 225, 238
+  orig: 239, 250
+  offset: 7, 6
+  index: -1
+guan
+  rotate: false
+  xy: 2, 2
+  size: 125, 137
+  orig: 125, 137
+  offset: 0, 0
+  index: -1
+guan_2
+  rotate: false
+  xy: 604, 32
+  size: 225, 233
+  orig: 237, 247
+  offset: 6, 7
+  index: -1
+quan
+  rotate: false
+  xy: 522, 74
+  size: 64, 65
+  orig: 76, 77
+  offset: 6, 5
+  index: -1
+ton
+  rotate: false
+  xy: 256, 5
+  size: 126, 134
+  orig: 127, 134
+  offset: 1, 0
+  index: -1
+ton_2
+  rotate: false
+  xy: 604, 267
+  size: 227, 237
+  orig: 240, 250
+  offset: 6, 6
+  index: -1
+xi
+  rotate: true
+  xy: 384, 16
+  size: 123, 136
+  orig: 123, 136
+  offset: 0, 0
+  index: -1
+xi_2
+  rotate: false
+  xy: 831, 27
+  size: 223, 237
+  orig: 237, 250
+  offset: 7, 6
+  index: -1

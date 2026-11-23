@@ -1,0 +1,27 @@
+
+shu.png
+size: 662,227
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+s1
+  rotate: true
+  xy: 258, 28
+  size: 197, 274
+  orig: 199, 376
+  offset: 2, 100
+  index: -1
+s2
+  rotate: false
+  xy: 2, 2
+  size: 254, 223
+  orig: 327, 230
+  offset: 0, 7
+  index: -1
+s3
+  rotate: false
+  xy: 534, 6
+  size: 126, 219
+  orig: 128, 223
+  offset: 0, 1
+  index: -1

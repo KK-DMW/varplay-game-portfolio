@@ -1,0 +1,41 @@
+
+e9fcbef7-63e6-45ab-a66e-91704216ecf5.png
+size: 597,897
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+caidai
+  rotate: false
+  xy: 2, 2
+  size: 589, 422
+  orig: 593, 422
+  offset: 4, 0
+  index: -1
+caidai_2
+  rotate: false
+  xy: 2, 426
+  size: 593, 262
+  orig: 593, 262
+  offset: 0, 0
+  index: -1
+caidai_3
+  rotate: false
+  xy: 64, 690
+  size: 488, 205
+  orig: 488, 205
+  offset: 0, 0
+  index: -1
+pi
+  rotate: true
+  xy: 14, 869
+  size: 26, 48
+  orig: 26, 48
+  offset: 0, 0
+  index: -1
+pi2
+  rotate: false
+  xy: 2, 888
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1

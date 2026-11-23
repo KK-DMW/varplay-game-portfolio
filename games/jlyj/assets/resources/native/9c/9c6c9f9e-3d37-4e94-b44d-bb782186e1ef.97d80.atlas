@@ -1,0 +1,20 @@
+
+zyxm.png
+size: 608,427
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+小猫
+  rotate: false
+  xy: 2, 2
+  size: 537, 423
+  orig: 537, 423
+  offset: 0, 0
+  index: -1
+小猫_阴影
+  rotate: true
+  xy: 541, 170
+  size: 255, 65
+  orig: 261, 71
+  offset: 3, 3
+  index: -1

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta charset="utf-8">
+
+  <title>Sand Craze</title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true,viewport-fit=cover"/>
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body>
+  <div id="GameDiv" cc_exact_fit_screen="true">
+<!-- SAND_CRAZE_BOOT_START -->
+<style>
+#GameDiv{position:relative}
+#sand-craze-boot{position:absolute;inset:0;z-index:9999;background:#61cbf6 url('skin-loading/background.jpg') center/cover no-repeat;overflow:hidden;container-type:inline-size;--progress:0}
+#sand-craze-boot .logo{position:absolute;width:61.481481%;height:auto;left:17.962963%;top:15.458333%}
+#sand-craze-boot .bar{position:absolute;width:71.388889%;aspect-ratio:771/94;left:15.277778%;bottom:14.5%;background:url('skin-loading/progress-base.png') center/100% 100% no-repeat;container-type:inline-size}
+#sand-craze-boot .fill-clip{position:absolute;left:calc(100% * 12 / 771);top:calc(100% * 10 / 94);height:calc(100% * 67 / 94);width:calc(100% * 744 / 771 * var(--progress));overflow:hidden}
+#sand-craze-boot .fill{position:absolute;left:0;top:0;height:100%;width:max(calc(100cqw * 67 / 771),calc(100cqw * 744 / 771 * var(--progress)));box-sizing:border-box;border:0 solid transparent;border-left-width:calc(100cqw * 33 / 771);border-right-width:calc(100cqw * 33 / 771);border-image:url('skin-loading/progress-fill.png') 0 33 fill stretch;border-image-width:0 calc(100cqw * 33 / 771)}
+#sand-craze-boot .caption{position:absolute;left:calc(100% * 12 / 771);top:calc(100% * 10 / 94);width:calc(100% * 744 / 771);height:calc(100% * 67 / 94);display:flex;align-items:center;justify-content:center}
+#sand-craze-boot .caption > svg{width:29.613%;height:96.716%;overflow:visible}
+#splash{display:none!important}
+</style>
+<div id="sand-craze-boot" role="progressbar" aria-label="Loading game" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <img class="logo" src="skin-loading/logo.png" alt="SAND CRAZE">
+  <div class="bar"><div class="fill-clip"><div class="fill"></div></div><div class="caption" aria-label="Loading..."><svg xmlns="http://www.w3.org/2000/svg" viewBox="5 0 467 135"><defs><filter id="loading-ink"><feFlood flood-color="#173253"/><feComposite in2="SourceAlpha" operator="in"/></filter><image id="loading-outline" href="skin-loading/caption-outline.png" width="854" height="1140"/><image id="loading-white" href="skin-loading/caption-white.png" width="854" height="1140"/></defs><g filter="url(#loading-ink)"><svg x="5" y="15" width="64" height="86" viewBox="332 891 64 86"><use href="#loading-outline"/></svg><svg x="57" y="35" width="68" height="67" viewBox="286 980 68 67"><use href="#loading-outline"/></svg><svg x="113" y="35" width="60" height="67" viewBox="493 980 60 67"><use href="#loading-outline"/></svg><svg x="163" y="10" width="72" height="92" viewBox="112 342 72 92"><use href="#loading-outline"/></svg><svg x="227" y="9" width="36" height="92" viewBox="318 342 36 92"><use href="#loading-outline"/></svg><svg x="255" y="35" width="67" height="67" viewBox="356 980 67 67"><use href="#loading-outline"/></svg><svg x="312" y="35" width="71" height="89" viewBox="419 530 71 89"><use href="#loading-outline"/></svg><svg x="374" y="63" width="40" height="40" viewBox="367 1050 40 40"><use href="#loading-outline"/></svg><svg x="403" y="63" width="40" height="40" viewBox="367 1050 40 40"><use href="#loading-outline"/></svg><svg x="432" y="63" width="40" height="40" viewBox="367 1050 40 40"><use href="#loading-outline"/></svg></g><g><svg x="5" y="15" width="64" height="86" viewBox="332 891 64 86"><use href="#loading-white"/></svg><svg x="57" y="35" width="68" height="67" viewBox="286 980 68 67"><use href="#loading-white"/></svg><svg x="113" y="35" width="60" height="67" viewBox="493 980 60 67"><use href="#loading-white"/></svg><svg x="163" y="10" width="72" height="92" viewBox="112 342 72 92"><use href="#loading-white"/></svg><svg x="227" y="9" width="36" height="92" viewBox="318 342 36 92"><use href="#loading-white"/></svg><svg x="255" y="35" width="67" height="67" viewBox="356 980 67 67"><use href="#loading-white"/></svg><svg x="312" y="35" width="71" height="89" viewBox="419 530 71 89"><use href="#loading-white"/></svg><svg x="374" y="63" width="40" height="40" viewBox="367 1050 40 40"><use href="#loading-white"/></svg><svg x="403" y="63" width="40" height="40" viewBox="367 1050 40 40"><use href="#loading-white"/></svg><svg x="432" y="63" width="40" height="40" viewBox="367 1050 40 40"><use href="#loading-white"/></svg></g></svg></div></div>
+</div>
+<script>
+(function () {
+  'use strict';
+  var boot = document.getElementById('sand-craze-boot');
+  if (!boot) return;
+  var target = 0, shown = 0, ready = false, finished = false, lastTime = performance.now(), readyAt = 0;
+  var resourceObserver, previewObserver, pipeline, progressPipe, attached = false, projectReady = false, tasks = [];
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function report(value, complete) {
+    if (finished || !Number.isFinite(value)) return;
+    target = Math.max(target, Math.max(0, Math.min(complete ? 1 : .98, value)));
+    if (complete && !ready) { ready = true; readyAt = performance.now(); target = 1; }
+  }
+
+  function cleanup() {
+    finished = true;
+    resourceObserver && resourceObserver.disconnect();
+    previewObserver && previewObserver.disconnect();
+    // Do not splice a live pipeline: async tasks retain their current pipe
+    // indices. The hook becomes a cheap pass-through after startup instead.
+    tasks = [];
+    window.removeEventListener('sand-craze-loading', onProgress);
+    boot.remove();
+  }
+
+  function paint(now) {
+    if (finished || !boot.isConnected) return;
+    var dt = Math.min(100, Math.max(0, now - lastTime)); lastTime = now;
+    // Interpolate only towards work actually completed. Elapsed time by itself
+    // never increases the target, and 100% requires the application's ready gate.
+    shown = reducedMotion ? target : shown + (target - shown) * (1 - Math.exp(-dt / (ready ? 20 : 70)));
+    if (target - shown < .0005) shown = target;
+    if (ready && now - readyAt >= 64) shown = 1;
+    boot.style.setProperty('--progress', shown);
+    boot.setAttribute('aria-valuenow', String(Math.round(shown * 100)));
+    if (ready && shown >= .9995) {
+      // Give the completed bar one paint, without a fixed artificial hold.
+      requestAnimationFrame(cleanup);
+    } else requestAnimationFrame(paint);
+  }
+
+  function onProgress(event) {
+    var detail = event.detail || {};
+    report(Number(detail.progress), !!detail.ready);
+  }
+  window.addEventListener('sand-craze-loading', onProgress);
+  requestAnimationFrame(paint);
+
+  // Early engine scripts and boot images load before Cocos is available.
+  // Observe completed bytes rather than guessing progress from a timer.
+  if (typeof PerformanceObserver !== 'undefined') {
+    var bytes = 0;
+    resourceObserver = new PerformanceObserver(function (list) {
+      if (attached) return;
+      list.getEntries().forEach(function (entry) { bytes += entry.encodedBodySize || entry.transferSize || 0; });
+      report(.12 * (1 - Math.exp(-bytes / 1000000)));
+    });
+    resourceObserver.observe({ type: 'resource', buffered: true });
+  }
+
+  window.sandCrazeAttachEngine = function (cc) {
+    if (attached || finished) return;
+    attached = true;
+    // Creator loads its editable scene through loadWithJson, whose progress
+    // callback drives this hidden built-in span rather than the load pipeline.
+    var previewProgress = document.querySelector('#splash .progress-bar span');
+    if (previewProgress && typeof MutationObserver !== 'undefined') {
+      previewObserver = new MutationObserver(function () {
+        var percent = Number.parseFloat(previewProgress.style.width);
+        if (Number.isFinite(percent)) report(.3 + .62 * Math.min(1, percent / 60));
+      });
+      previewObserver.observe(previewProgress, { attributes: true, attributeFilter: ['style'] });
+    }
+    [
+      ['EVENT_POST_BASE_INIT', .15], ['EVENT_POST_INFRASTRUCTURE_INIT', .2],
+      ['EVENT_POST_SUBSYSTEM_INIT', .26], ['EVENT_POST_PROJECT_INIT', .3],
+    ].forEach(function (stage) {
+      cc.game.once(cc.Game[stage[0]], function () {
+        if (stage[0] === 'EVENT_POST_PROJECT_INIT') { projectReady = true; tasks = []; }
+        report(stage[1]);
+      });
+    });
+    // Cocos' supported pipeline hook receives real (finished, total) counts,
+    // including dependencies. Child tasks share their parent's counter/callback.
+    pipeline = cc.assetManager && cc.assetManager.pipeline;
+    if (!pipeline || !pipeline.insert) return;
+    progressPipe = function (task, next) {
+      task.output = task.input;
+      // Small metadata/builtin tasks may finish long before the launch scene.
+      // Only its complete dependency graph owns the large 30–92% interval.
+      if (!projectReady || task.progress || finished || task.options?.preset !== 'scene') { next(); return; }
+      var state = { done: 0, total: 1 }, oldProgress = task.onProgress, oldComplete = task.onComplete;
+      tasks.push(state);
+      function update() {
+        var done = 0, total = 0;
+        tasks.forEach(function (item) { done += item.done; total += item.total; });
+        report(.3 + .62 * done / Math.max(1, total));
+      }
+      task.onProgress = function (done, total) {
+        state.done = done; state.total = Math.max(done, total); update();
+        if (oldProgress) oldProgress.apply(this, arguments);
+      };
+      task.onComplete = function (error) {
+        if (!error) { state.done = state.total; update(); }
+        if (oldComplete) return oldComplete.apply(this, arguments);
+      };
+      next();
+    };
+    pipeline.insert(progressPipe, 0);
+  };
+})();
+
+</script>
+
+<!-- SAND_CRAZE_BOOT_END -->
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+      </div>
+    </div>
+  
+
+<!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+    System.import('./index.js').catch(function(err) { console.error(err); })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+6cde60b4-77c1-4b52-b806-5af2903553e1.png
+size: 834,418
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cgon
+  rotate: false
+  xy: 419, 3
+  size: 413, 413
+  orig: 417, 417
+  offset: 2, 2
+  index: -1
+shibai
+  rotate: false
+  xy: 2, 2
+  size: 415, 414
+  orig: 419, 418
+  offset: 2, 2
+  index: -1

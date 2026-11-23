@@ -1,0 +1,20 @@
+
+010ab169-5829-42d4-a068-c7f158cb14a7.png
+size: 524,424
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: false
+  xy: 2, 2
+  size: 422, 420
+  orig: 430, 431
+  offset: 3, 5
+  index: -1
+sg
+  rotate: false
+  xy: 426, 302
+  size: 96, 120
+  orig: 112, 140
+  offset: 8, 12
+  index: -1

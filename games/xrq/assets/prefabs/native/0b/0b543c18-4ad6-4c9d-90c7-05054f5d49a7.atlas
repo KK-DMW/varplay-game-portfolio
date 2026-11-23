@@ -1,0 +1,20 @@
+
+73c7c629-afef-4f61-bc52-d25c2a75e951.png
+size: 476,430
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sg
+  rotate: false
+  xy: 2, 2
+  size: 426, 426
+  orig: 433, 433
+  offset: 3, 3
+  index: -1
+sgg
+  rotate: false
+  xy: 430, 344
+  size: 44, 84
+  orig: 50, 96
+  offset: 3, 6
+  index: -1

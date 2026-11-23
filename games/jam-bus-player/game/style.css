@@ -1,0 +1,146 @@
+html {
+  -ms-touch-action: none;
+}
+
+body, canvas, div {
+  display: block;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Remove spin of input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  cursor: default;
+  color: #888;
+  background-color: #333;
+
+  text-align: center;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+canvas {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#GameDiv, #Cocos3dGameContainer, #GameCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --safe-top: env(safe-area-inset-top);
+  --safe-right: env(safe-area-inset-right);
+  --safe-bottom: env(safe-area-inset-bottom);
+  --safe-left: env(safe-area-inset-left);
+}
+/* Jambus portrait viewport */
+html, body {
+  overflow: hidden;
+  /* Match the exported game's blue-grey surround in desktop portrait preview. */
+  background: linear-gradient(to bottom, #c6d8e8, #b3bee0);
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+#GameDiv {
+  position: relative;
+  width: min(100vw, calc(100vh * 750 / 1440)) !important;
+  height: min(100vh, calc(100vw * 1440 / 750)) !important;
+  flex: 0 0 auto !important;
+  margin: 0 auto !important;
+}
+
+#Cocos3dGameContainer, #GameCanvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Every portrait viewport is a real game viewport. Cocos uses fixed width on
+   tall phones and fixed height on short phones/tablets, so the board keeps
+   its artwork proportions while the background and overlays fill the sides. */
+@media (orientation: portrait) {
+  html, body {
+    background: linear-gradient(to bottom, #c6d8e8, #b3bee0);
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  #GameDiv {
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+  }
+}
+
+/* Landscape desktop previews remain contained, so their modal shade extends
+   across the two exterior margins. Portrait shades cover the canvas itself. */
+@media (orientation: landscape) {
+body[data-jambus-modal='pause'] #GameDiv {
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.918);
+}
+body[data-jambus-modal='use'] #GameDiv {
+  box-shadow: 0 0 0 100vmax rgba(9, 17, 38, 0.769);
+}
+body[data-jambus-modal='purchase'] #GameDiv,
+body[data-jambus-modal='status'] #GameDiv {
+  box-shadow: 0 0 0 100vmax rgba(12, 22, 52, 0.714);
+}
+body[data-jambus-modal='select'] #GameDiv {
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.706);
+}
+body[data-jambus-modal='fireworks'] #GameDiv {
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.745);
+}
+body[data-jambus-modal='victory'] #GameDiv {
+  box-shadow: 0 0 0 100vmax #01458e;
+}
+}
+
+/* Any touch-screen device held sideways leaves a narrow portrait canvas.
+   Keep the desktop preview, but ask phone, tablet and foldable players to rotate. */
+@media (orientation: landscape) and (pointer: coarse) {
+  body::after {
+    content: '请旋转设备，竖屏体验';
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+    color: #fff5df;
+    background: #223251;
+    font: 700 22px/1.5 sans-serif;
+    text-align: center;
+  }
+}
